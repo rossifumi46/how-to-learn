@@ -43,6 +43,7 @@
 }
 
 .header__title {
+  margin: 0;
   width: 730px;
   align-self: center;
   margin-left: 64px;
@@ -52,6 +53,7 @@
 }
 
 .header__subtitle {
+  margin: 0;
   position: absolute;
   width: 388px;
   margin-left: 64px;
@@ -119,6 +121,11 @@
 }
 
 
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -166,12 +173,15 @@
 }
 
 .table__heading {
+  margin: 0;
+  /* нижний отступ в table__text */
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
+  margin: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -219,6 +229,8 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
+  color: black;
 }
 
 .kaufman {
@@ -252,7 +264,8 @@
 
 .kaufman__triangle {
   position: absolute;
-  right: -210px;
+  background-size: cover;
+  right:-210px;
   top: 0;
   width: 877px;
   height: 877px;
@@ -267,11 +280,12 @@
   color: white;
   display: flex;
   justify-content: center;
+  min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   width: 90%;
-  min-height: 350px;
   display: flex;
   justify-content: space-between;
 }
@@ -304,7 +318,7 @@
   margin-right: 10px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url('../images/logo_place_footer.svg');
 }
 
@@ -317,15 +331,10 @@
 }
 
 .footer__column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-}
-
-
-.feinman__link {
-  text-decoration: none;
-  color: black;
 }
 
 .footer__column-link {
